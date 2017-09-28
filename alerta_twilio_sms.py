@@ -27,7 +27,7 @@
 
   <meta name="viewport" content="width=device-width">
   
-  <title>alerta-contrib/README.md at master · alerta/alerta-contrib</title>
+  <title>alerta-contrib/alerta_twilio_sms.py at master · alerta/alerta-contrib</title>
   <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="GitHub">
   <link rel="fluid-icon" href="https://github.com/fluidicon.png" title="GitHub">
   <meta property="fb:app_id" content="1401488693436528">
@@ -36,10 +36,10 @@
     <meta content="https://avatars3.githubusercontent.com/u/5067139?v=4&amp;s=400" property="og:image" /><meta content="GitHub" property="og:site_name" /><meta content="object" property="og:type" /><meta content="alerta/alerta-contrib" property="og:title" /><meta content="https://github.com/alerta/alerta-contrib" property="og:url" /><meta content="alerta-contrib - Contributed integrations and plugins" property="og:description" />
 
   <link rel="assets" href="https://assets-cdn.github.com/">
-  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA5NjI2MjU3OjEyODEzNDc5ZmUzNzFhN2FmZjMwNTc0MDdkZjdkZmE4NGRjNmFlYTg2NTUxMGE1N2FhMWYzODQyMjlhYWE3M2Q=--b9f579d34f722734a7d9871575fcfa9c8e3e873d">
+  <link rel="web-socket" href="wss://live.github.com/_sockets/VjI6MjA5NjI2MjU3OmFhOWJiMGNhMzc2ZmI1MzkyZTFmOTgzZTE4M2Y3MWU1NzVmMDhlOTFhNDZmNzZjNWM2NjgwYzVhZjdjZjY4MzU=--2813f568a1e4ccbed4ebd80ba197b5d83f466041">
   <meta name="pjax-timeout" content="1000">
   <link rel="sudo-modal" href="/sessions/sudo_modal">
-  <meta name="request-id" content="E62A:30BF:8F9335:EDB946:59CD79CC" data-pjax-transient>
+  <meta name="request-id" content="E640:30C1:108BDB2:1A91E94:59CD79EC" data-pjax-transient>
   
 
   <meta name="selected-link" value="repo_source" data-pjax-transient>
@@ -48,7 +48,7 @@
 <meta name="google-site-verification" content="ZzhVyEFwb7w3e0-uOTltm8Jsck2F5StVihD0exw2fsA">
     <meta name="google-analytics" content="UA-3769691-2">
 
-<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="E62A:30BF:8F9335:EDB946:59CD79CC" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="32375849" name="octolytics-actor-id" /><meta content="inovasuper" name="octolytics-actor-login" /><meta content="1465faa12a48dab24bde7d38cf05a8f317a3cf4918d505fba404fb0c59d378bd" name="octolytics-actor-hash" />
+<meta content="collector.githubapp.com" name="octolytics-host" /><meta content="github" name="octolytics-app-id" /><meta content="https://collector.githubapp.com/github-external/browser_event" name="octolytics-event-url" /><meta content="E640:30C1:108BDB2:1A91E94:59CD79EC" name="octolytics-dimension-request_id" /><meta content="iad" name="octolytics-dimension-region_edge" /><meta content="iad" name="octolytics-dimension-region_render" /><meta content="32375849" name="octolytics-actor-id" /><meta content="inovasuper" name="octolytics-actor-login" /><meta content="1465faa12a48dab24bde7d38cf05a8f317a3cf4918d505fba404fb0c59d378bd" name="octolytics-actor-hash" />
 <meta content="/&lt;user-name&gt;/&lt;repo-name&gt;/blob/show" data-pjax-transient="true" name="analytics-location" />
 
 
@@ -63,7 +63,7 @@
   <meta name="user-login" content="inovasuper">
 
       <meta name="expected-hostname" content="github.com">
-    <meta name="js-proxy-site-detection-payload" content="Y2JkNWNkM2UxYjY5MjUzM2I1OTBmMTY4MjhlNjZmNmY1OTU2YzI1MjBjOWQxYTE2MGU0ZTc5NjEzMmIzOWE5NXx7InJlbW90ZV9hZGRyZXNzIjoiMTg5LjcuMTAwLjE3NSIsInJlcXVlc3RfaWQiOiJFNjJBOjMwQkY6OEY5MzM1OkVEQjk0Njo1OUNENzlDQyIsInRpbWVzdGFtcCI6MTUwNjYzODI5MiwiaG9zdCI6ImdpdGh1Yi5jb20ifQ==">
+    <meta name="js-proxy-site-detection-payload" content="M2Q1MzM4ZGM0ODY4YTRmNWRmNjY1Nzk0ZmY0MWJkM2Y5ZmNmMTY0N2VkZDYzZjY3ZmU3NzI2NGQ5ZjlkNWFhZHx7InJlbW90ZV9hZGRyZXNzIjoiMTg5LjcuMTAwLjE3NSIsInJlcXVlc3RfaWQiOiJFNjQwOjMwQzE6MTA4QkRCMjoxQTkxRTk0OjU5Q0Q3OUVDIiwidGltZXN0YW1wIjoxNTA2NjM4MzE2LCJob3N0IjoiZ2l0aHViLmNvbSJ9">
 
     <meta name="enabled-features" content="UNIVERSE_BANNER">
 
@@ -80,7 +80,7 @@
   <meta content="5067139" name="octolytics-dimension-user_id" /><meta content="alerta" name="octolytics-dimension-user_login" /><meta content="19289833" name="octolytics-dimension-repository_id" /><meta content="alerta/alerta-contrib" name="octolytics-dimension-repository_nwo" /><meta content="true" name="octolytics-dimension-repository_public" /><meta content="false" name="octolytics-dimension-repository_is_fork" /><meta content="19289833" name="octolytics-dimension-repository_network_root_id" /><meta content="alerta/alerta-contrib" name="octolytics-dimension-repository_network_root_nwo" /><meta content="false" name="octolytics-dimension-repository_explore_github_marketplace_ci_cta_shown" />
 
 
-    <link rel="canonical" href="https://github.com/alerta/alerta-contrib/blob/master/plugins/twilio/README.md" data-pjax-transient>
+    <link rel="canonical" href="https://github.com/alerta/alerta-contrib/blob/master/plugins/twilio/alerta_twilio_sms.py" data-pjax-transient>
 
 
   <meta name="browser-stats-url" content="https://api.github.com/_private/browser/stats">
@@ -127,7 +127,7 @@
               <div class="header-search scoped-search site-scoped-search js-site-search" role="search">
   <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/search" class="js-site-search-form" data-scoped-search-url="/alerta/alerta-contrib/search" data-unscoped-search-url="/search" method="get"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /></div>
     <label class="form-control header-search-wrapper js-chromeless-input-container">
-        <a href="/alerta/alerta-contrib/blob/master/plugins/twilio/README.md" class="header-search-scope no-underline">This repository</a>
+        <a href="/alerta/alerta-contrib/blob/master/plugins/twilio/alerta_twilio_sms.py" class="header-search-scope no-underline">This repository</a>
       <input type="text"
         class="form-control header-search-input js-site-search-focus js-site-search-field is-clearable"
         data-hotkey="s"
@@ -250,7 +250,7 @@
           Settings
         </a></li>
 
-        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="Ne5lbtH5S/d3ZjlDixeRkzJcjtGPBJWiA0v2ksls3tXXsbFYj+jKauAsMndsrFcIGw8vZLaLuHRd2UHaLCMobA==" /></div>
+        <li><!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="logout-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3TD8s4qwrddzZQAGAxkMsRjU3Zwuv7d/SX+Mu8JpdNw/byiF1KEsSuQvCzLkosoqMYd8KRcwmqkX7TvzJyaCZQ==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -261,7 +261,7 @@
 </ul>
 
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="nY37EJV3b1HWSDc/rlhs9KhJ2ZceNAmqn84uGhODaBh/0i8my2buzEECPAtJ46pvgRp4Iie7JHzBXJlS9syeoQ==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/logout" class="sr-only right-0" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="dcpQw/RSgODUtaAZuDzKdyMJ1aMl8xh3O5aZdUEDKOCXlYT1qkMBfUP/qy1fhwzsClp0Fhx8NaFlBC49pEzeWQ==" /></div>
           <button type="submit" class="dropdown-item dropdown-signout" data-ga-click="Header, sign out, icon:logout">
             Sign out
           </button>
@@ -298,7 +298,7 @@
 
         <ul class="pagehead-actions">
   <li>
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="tn0vxhbn0o18MpCH8tOCtIh3h7nIGSLddCtRnvJkwYj3MxngxafEE/GGdg5NeEb4bAkv9AqlvAYnFMhUAuD4qg==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="19289833" />
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/notifications/subscribe" class="js-social-container" data-autosubmit="true" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="wanRPHNxzmLcAD3Ay36Qpk6i/iiXx74Dq/uZJu9jnS6A5+caoDHY/FG020l01VTqqtxWZVV7INj4xADsH+ekDA==" /></div>      <input class="form-control" id="repository_id" name="repository_id" type="hidden" value="19289833" />
 
         <div class="select-menu js-menu-container js-select-menu">
           <a href="/alerta/alerta-contrib/subscription"
@@ -378,7 +378,7 @@
   <li>
     
   <div class="js-toggler-container js-social-container starring-container ">
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="zJo3P5LzPJTKwRzLeILEHLw/26IRoXnj1BNkZI/ApPCJIQB2nhrFF9zdhfgQqRPjiuev+8rg6vPc8JAjg8nySQ==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/unstar" class="starred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="APMWa2GPyldzHOKrGb0s61Bl2yjOwlIc+kspNGEKU7lFSCEibWYz1GUAe5hxlvsUZr2vcRWDwQzyqN1zbQMFAA==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -392,7 +392,7 @@
           27
         </a>
 </form>
-    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="itNUDyx5hMX0mJ9Vfr5stMb5F1lzjVch7jaWPlrAHCN57NpoWExbzto2xgRC0Hvfga+3fkiTlR9Fzt33jHebNg==" /></div>
+    <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/star" class="unstarred" data-remote="true" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="oK4ZAAmUF09uaHJsphBLJYnsKnz2kWUxJMc3uNQWneVTkZdnfaHIREDGKz2aflxOzrqKW82Ppw+PP3xxAqEa8A==" /></div>
       <button
         type="submit"
         class="btn btn-sm btn-with-count js-toggler-target"
@@ -410,7 +410,7 @@
   </li>
 
   <li>
-          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="HToo1CWzYXMFNQQrylQR6UC2K6dTLSzqPCu8xlSdxdTzQFMr2AURLEG2zIaqGhOdetBAo+7RT9NR7EWX06ABqw==" /></div>
+          <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/fork" class="btn-with-count" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="DsFhs3GVtetDpBHH/AUJWSc/we5HGH+NZMVPUD5Xh/7guxpMjCPFtAcn2WqcSwstHVmq6vrkHLQJArYBuWpDgQ==" /></div>
             <button
                 type="submit"
                 class="btn btn-sm btn-with-count"
@@ -502,9 +502,9 @@
   <div class="repository-content">
 
     
-  <a href="/alerta/alerta-contrib/blob/d49da64da862c3cf91f92eec4a9c9523f828ac79/plugins/twilio/README.md" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
+  <a href="/alerta/alerta-contrib/blob/d49da64da862c3cf91f92eec4a9c9523f828ac79/plugins/twilio/alerta_twilio_sms.py" class="d-none js-permalink-shortcut" data-hotkey="y">Permalink</a>
 
-  <!-- blob contrib key: blob_contributors:v21:132a99c92a06abafae6c17792259a855 -->
+  <!-- blob contrib key: blob_contributors:v21:3dd930c410e6477a7ca6064ff81a4400 -->
 
   <div class="file-navigation js-zeroclipboard-container">
     
@@ -546,7 +546,7 @@
 
 
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/add-status-change-hook/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/add-status-change-hook/plugins/twilio/alerta_twilio_sms.py"
                data-name="add-status-change-hook"
                data-skip-pjax="true"
                rel="nofollow">
@@ -556,7 +556,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/alerta-pinger/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/alerta-pinger/plugins/twilio/alerta_twilio_sms.py"
                data-name="alerta-pinger"
                data-skip-pjax="true"
                rel="nofollow">
@@ -566,7 +566,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/alerta-sqs/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/alerta-sqs/plugins/twilio/alerta_twilio_sms.py"
                data-name="alerta-sqs"
                data-skip-pjax="true"
                rel="nofollow">
@@ -576,7 +576,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/cachet-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/cachet-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="cachet-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -586,7 +586,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/consul-readme-setup/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/consul-readme-setup/plugins/twilio/alerta_twilio_sms.py"
                data-name="consul-readme-setup"
                data-skip-pjax="true"
                rel="nofollow">
@@ -596,7 +596,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/deprecate-dynect/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/deprecate-dynect/plugins/twilio/alerta_twilio_sms.py"
                data-name="deprecate-dynect"
                data-skip-pjax="true"
                rel="nofollow">
@@ -606,7 +606,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/deprecate-logger/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/deprecate-logger/plugins/twilio/alerta_twilio_sms.py"
                data-name="deprecate-logger"
                data-skip-pjax="true"
                rel="nofollow">
@@ -616,7 +616,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/deprecate-pagerduty-integration/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/deprecate-pagerduty-integration/plugins/twilio/alerta_twilio_sms.py"
                data-name="deprecate-pagerduty-integration"
                data-skip-pjax="true"
                rel="nofollow">
@@ -626,7 +626,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/deprecate-solarwinds/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/deprecate-solarwinds/plugins/twilio/alerta_twilio_sms.py"
                data-name="deprecate-solarwinds"
                data-skip-pjax="true"
                rel="nofollow">
@@ -636,7 +636,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/enhance-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/enhance-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="enhance-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -646,7 +646,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/fix-readme-1/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/fix-readme-1/plugins/twilio/alerta_twilio_sms.py"
                data-name="fix-readme-1"
                data-skip-pjax="true"
                rel="nofollow">
@@ -656,7 +656,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/fix-slack-severities/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/fix-slack-severities/plugins/twilio/alerta_twilio_sms.py"
                data-name="fix-slack-severities"
                data-skip-pjax="true"
                rel="nofollow">
@@ -666,7 +666,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/fix-snmptrap-timeout/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/fix-snmptrap-timeout/plugins/twilio/alerta_twilio_sms.py"
                data-name="fix-snmptrap-timeout"
                data-skip-pjax="true"
                rel="nofollow">
@@ -676,7 +676,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/fix-to-date-param/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/fix-to-date-param/plugins/twilio/alerta_twilio_sms.py"
                data-name="fix-to-date-param"
                data-skip-pjax="true"
                rel="nofollow">
@@ -686,7 +686,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/geoip-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/geoip-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="geoip-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -696,7 +696,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/hipchat-plugin-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/hipchat-plugin-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="hipchat-plugin-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -706,7 +706,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/hipchat-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/hipchat-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="hipchat-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -716,7 +716,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/influxdb-single-measurement/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/influxdb-single-measurement/plugins/twilio/alerta_twilio_sms.py"
                data-name="influxdb-single-measurement"
                data-skip-pjax="true"
                rel="nofollow">
@@ -726,7 +726,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/logstash-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/logstash-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="logstash-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -736,7 +736,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/mailer-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/mailer-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="mailer-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -746,7 +746,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open selected"
-               href="/alerta/alerta-contrib/blob/master/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/master/plugins/twilio/alerta_twilio_sms.py"
                data-name="master"
                data-skip-pjax="true"
                rel="nofollow">
@@ -756,7 +756,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/mit-license/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/mit-license/plugins/twilio/alerta_twilio_sms.py"
                data-name="mit-license"
                data-skip-pjax="true"
                rel="nofollow">
@@ -766,7 +766,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/more-readmes/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/more-readmes/plugins/twilio/alerta_twilio_sms.py"
                data-name="more-readmes"
                data-skip-pjax="true"
                rel="nofollow">
@@ -776,7 +776,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/normalise-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/normalise-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="normalise-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -786,7 +786,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/opsweekly-integration/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/opsweekly-integration/plugins/twilio/alerta_twilio_sms.py"
                data-name="opsweekly-integration"
                data-skip-pjax="true"
                rel="nofollow">
@@ -796,7 +796,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/pagerduty-ack/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/pagerduty-ack/plugins/twilio/alerta_twilio_sms.py"
                data-name="pagerduty-ack"
                data-skip-pjax="true"
                rel="nofollow">
@@ -806,7 +806,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/pagerduty-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/pagerduty-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="pagerduty-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -816,7 +816,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/pagerduty-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/pagerduty-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="pagerduty-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -826,7 +826,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/plugin-geoip/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/plugin-geoip/plugins/twilio/alerta_twilio_sms.py"
                data-name="plugin-geoip"
                data-skip-pjax="true"
                rel="nofollow">
@@ -836,7 +836,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/plugin-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/plugin-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="plugin-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -846,7 +846,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/plugins-config-settings/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/plugins-config-settings/plugins/twilio/alerta_twilio_sms.py"
                data-name="plugins-config-settings"
                data-skip-pjax="true"
                rel="nofollow">
@@ -856,7 +856,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/prom-silence-id-update/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/prom-silence-id-update/plugins/twilio/alerta_twilio_sms.py"
                data-name="prom-silence-id-update"
                data-skip-pjax="true"
                rel="nofollow">
@@ -866,7 +866,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/prometheus-default-external-url/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/prometheus-default-external-url/plugins/twilio/alerta_twilio_sms.py"
                data-name="prometheus-default-external-url"
                data-skip-pjax="true"
                rel="nofollow">
@@ -876,7 +876,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/prometheus-delete-silence/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/prometheus-delete-silence/plugins/twilio/alerta_twilio_sms.py"
                data-name="prometheus-delete-silence"
                data-skip-pjax="true"
                rel="nofollow">
@@ -886,7 +886,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/prometheus-external-url/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/prometheus-external-url/plugins/twilio/alerta_twilio_sms.py"
                data-name="prometheus-external-url"
                data-skip-pjax="true"
                rel="nofollow">
@@ -896,7 +896,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/prometheus-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/prometheus-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="prometheus-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -906,7 +906,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/pushover-plugin-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/pushover-plugin-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="pushover-plugin-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -916,7 +916,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/pushover-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/pushover-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="pushover-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -926,7 +926,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/readme-license/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/readme-license/plugins/twilio/alerta_twilio_sms.py"
                data-name="readme-license"
                data-skip-pjax="true"
                rel="nofollow">
@@ -936,7 +936,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/readme-links/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/readme-links/plugins/twilio/alerta_twilio_sms.py"
                data-name="readme-links"
                data-skip-pjax="true"
                rel="nofollow">
@@ -946,7 +946,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/readme-sundry-fixes/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/readme-sundry-fixes/plugins/twilio/alerta_twilio_sms.py"
                data-name="readme-sundry-fixes"
                data-skip-pjax="true"
                rel="nofollow">
@@ -956,7 +956,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/release-5.0-plugins/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/release-5.0-plugins/plugins/twilio/alerta_twilio_sms.py"
                data-name="release-5.0-plugins"
                data-skip-pjax="true"
                rel="nofollow">
@@ -966,7 +966,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/retire-cw-integration/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/retire-cw-integration/plugins/twilio/alerta_twilio_sms.py"
                data-name="retire-cw-integration"
                data-skip-pjax="true"
                rel="nofollow">
@@ -976,7 +976,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/slack-attachment-bugfix/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/slack-attachment-bugfix/plugins/twilio/alerta_twilio_sms.py"
                data-name="slack-attachment-bugfix"
                data-skip-pjax="true"
                rel="nofollow">
@@ -986,7 +986,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/slack-update-2/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/slack-update-2/plugins/twilio/alerta_twilio_sms.py"
                data-name="slack-update-2"
                data-skip-pjax="true"
                rel="nofollow">
@@ -996,7 +996,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/slack-update/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/slack-update/plugins/twilio/alerta_twilio_sms.py"
                data-name="slack-update"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1006,7 +1006,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/snmptrap-indeterminate/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/snmptrap-indeterminate/plugins/twilio/alerta_twilio_sms.py"
                data-name="snmptrap-indeterminate"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1016,7 +1016,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/snmptrap-transform-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/snmptrap-transform-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="snmptrap-transform-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1026,7 +1026,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/supervisor-origin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/supervisor-origin/plugins/twilio/alerta_twilio_sms.py"
                data-name="supervisor-origin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1036,7 +1036,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/sylog-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/sylog-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="sylog-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1046,7 +1046,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/syslog-correlate/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/syslog-correlate/plugins/twilio/alerta_twilio_sms.py"
                data-name="syslog-correlate"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1056,7 +1056,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/syslog-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/syslog-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="syslog-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1066,7 +1066,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/syslog-screenshot/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/syslog-screenshot/plugins/twilio/alerta_twilio_sms.py"
                data-name="syslog-screenshot"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1076,7 +1076,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/syslog-update/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/syslog-update/plugins/twilio/alerta_twilio_sms.py"
                data-name="syslog-update"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1086,7 +1086,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/telegram-plugin-webhook/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/telegram-plugin-webhook/plugins/twilio/alerta_twilio_sms.py"
                data-name="telegram-plugin-webhook"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1096,7 +1096,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/telegram-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/telegram-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="telegram-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1106,7 +1106,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/telegram-webhook-ratelimit/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/telegram-webhook-ratelimit/plugins/twilio/alerta_twilio_sms.py"
                data-name="telegram-webhook-ratelimit"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1116,7 +1116,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/twilio-app-config/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/twilio-app-config/plugins/twilio/alerta_twilio_sms.py"
                data-name="twilio-app-config"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1126,7 +1126,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/twilio-env-var-config/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/twilio-env-var-config/plugins/twilio/alerta_twilio_sms.py"
                data-name="twilio-env-var-config"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1136,7 +1136,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/twilio-sms-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/twilio-sms-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="twilio-sms-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1146,7 +1146,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/update-alerta-mailer/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/update-alerta-mailer/plugins/twilio/alerta_twilio_sms.py"
                data-name="update-alerta-mailer"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1156,7 +1156,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/update-influxdb-v11/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/update-influxdb-v11/plugins/twilio/alerta_twilio_sms.py"
                data-name="update-influxdb-v11"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1166,7 +1166,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/update-influxdb/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/update-influxdb/plugins/twilio/alerta_twilio_sms.py"
                data-name="update-influxdb"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1176,7 +1176,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/update-opsweekly-readme/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/update-opsweekly-readme/plugins/twilio/alerta_twilio_sms.py"
                data-name="update-opsweekly-readme"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1186,7 +1186,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/update-readmes/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/update-readmes/plugins/twilio/alerta_twilio_sms.py"
                data-name="update-readmes"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1196,7 +1196,7 @@
               </span>
             </a>
             <a class="select-menu-item js-navigation-item js-navigation-open "
-               href="/alerta/alerta-contrib/blob/zabbix-plugin/plugins/twilio/README.md"
+               href="/alerta/alerta-contrib/blob/zabbix-plugin/plugins/twilio/alerta_twilio_sms.py"
                data-name="zabbix-plugin"
                data-skip-pjax="true"
                rel="nofollow">
@@ -1233,30 +1233,53 @@
       <button aria-label="Copy file path to clipboard" class="js-zeroclipboard btn btn-sm BtnGroup-item tooltipped tooltipped-s" data-copied-hint="Copied!" type="button">Copy path</button>
     </div>
     <div class="breadcrumb js-zeroclipboard-target">
-      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/alerta/alerta-contrib"><span>alerta-contrib</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/alerta/alerta-contrib/tree/master/plugins"><span>plugins</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/alerta/alerta-contrib/tree/master/plugins/twilio"><span>twilio</span></a></span><span class="separator">/</span><strong class="final-path">README.md</strong>
+      <span class="repo-root js-repo-root"><span class="js-path-segment"><a href="/alerta/alerta-contrib"><span>alerta-contrib</span></a></span></span><span class="separator">/</span><span class="js-path-segment"><a href="/alerta/alerta-contrib/tree/master/plugins"><span>plugins</span></a></span><span class="separator">/</span><span class="js-path-segment"><a href="/alerta/alerta-contrib/tree/master/plugins/twilio"><span>twilio</span></a></span><span class="separator">/</span><strong class="final-path">alerta_twilio_sms.py</strong>
     </div>
   </div>
 
 
-  <include-fragment class="commit-tease" src="/alerta/alerta-contrib/contributors/master/plugins/twilio/README.md">
-    <div>
-      Fetching contributors&hellip;
-    </div>
+  
+  <div class="commit-tease">
+      <span class="float-right">
+        <a class="commit-tease-sha" href="/alerta/alerta-contrib/commit/6c15db4c514c03c3514c5e0163d9f5db86f37e28" data-pjax>
+          6c15db4
+        </a>
+        <relative-time datetime="2017-09-17T15:22:46Z">Sep 17, 2017</relative-time>
+      </span>
+      <div>
+        <img alt="@satterly" class="avatar" height="20" src="https://avatars0.githubusercontent.com/u/615057?v=4&amp;s=40" width="20" />
+        <a href="/satterly" class="user-mention" rel="contributor">satterly</a>
+          <a href="/alerta/alerta-contrib/commit/6c15db4c514c03c3514c5e0163d9f5db86f37e28" class="message" data-pjax="true" title="Update plugins for Release 5.0">Update plugins for Release 5.0</a>
+      </div>
 
     <div class="commit-tease-contributors">
-      <img alt="" class="loader-loading float-left" height="16" src="https://assets-cdn.github.com/images/spinners/octocat-spinner-32-EAF2F5.gif" width="16" />
-      <span class="loader-error">Cannot retrieve contributors at this time</span>
+      <button type="button" class="btn-link muted-link contributors-toggle" data-facebox="#blob_contributors_box">
+        <strong>1</strong>
+         contributor
+      </button>
+      
     </div>
-</include-fragment>
+
+    <div id="blob_contributors_box" style="display:none">
+      <h2 class="facebox-header" data-facebox-id="facebox-header">Users who have contributed to this file</h2>
+      <ul class="facebox-user-list" data-facebox-id="facebox-description">
+          <li class="facebox-user-list-item">
+            <img alt="@satterly" height="24" src="https://avatars2.githubusercontent.com/u/615057?v=4&amp;s=48" width="24" />
+            <a href="/satterly">satterly</a>
+          </li>
+      </ul>
+    </div>
+  </div>
+
 
   <div class="file">
     <div class="file-header">
   <div class="file-actions">
 
     <div class="BtnGroup">
-      <a href="/alerta/alerta-contrib/raw/master/plugins/twilio/README.md" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
-        <a href="/alerta/alerta-contrib/blame/master/plugins/twilio/README.md" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
-      <a href="/alerta/alerta-contrib/commits/master/plugins/twilio/README.md" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
+      <a href="/alerta/alerta-contrib/raw/master/plugins/twilio/alerta_twilio_sms.py" class="btn btn-sm BtnGroup-item" id="raw-url">Raw</a>
+        <a href="/alerta/alerta-contrib/blame/master/plugins/twilio/alerta_twilio_sms.py" class="btn btn-sm js-update-url-with-hash BtnGroup-item" data-hotkey="b">Blame</a>
+      <a href="/alerta/alerta-contrib/commits/master/plugins/twilio/alerta_twilio_sms.py" class="btn btn-sm BtnGroup-item" rel="nofollow">History</a>
     </div>
 
         <a class="btn-octicon tooltipped tooltipped-nw"
@@ -1266,12 +1289,12 @@
             <svg aria-hidden="true" class="octicon octicon-device-desktop" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M15 2H1c-.55 0-1 .45-1 1v9c0 .55.45 1 1 1h5.34c-.25.61-.86 1.39-2.34 2h8c-1.48-.61-2.09-1.39-2.34-2H15c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm0 9H1V3h14v8z"/></svg>
         </a>
 
-        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/edit/master/plugins/twilio/README.md" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="OPocUji7mpnqgb+jQc8vj3dW/KDu5kC9/e3yoMbHSFZHUB99flV5OA9VUR4tn1qHMAZeLmaorOOL6qRQ/jGaaA==" /></div>
+        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/edit/master/plugins/twilio/alerta_twilio_sms.py" class="inline-form js-update-url-with-hash" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="lI/tu+onhitHhd/t6HjbBWaQ4Hxdaws/EjMP+BEVgTv0nUooVQ566j60/N+ujL65o0leqJaLLbSUHLKEqqdZFQ==" /></div>
           <button class="btn-octicon tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and edit the file" data-hotkey="e" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-pencil" height="16" version="1.1" viewBox="0 0 14 16" width="14"><path fill-rule="evenodd" d="M0 12v3h3l8-8-3-3-8 8zm3 2H1v-2h1v1h1v1zm10.3-9.3L12 6 9 3l1.3-1.3a.996.996 0 0 1 1.41 0l1.59 1.59c.39.39.39 1.02 0 1.41z"/></svg>
           </button>
-</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/delete/master/plugins/twilio/README.md" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="6rU3W9qmVIrSA8WvCoYn6ifGMHiwJ6FXIie9oj6LjDq7MFFcU+UCSWS4pVAPh9uJs1BapT+PZr5V8S/OJTeyxw==" /></div>
+</form>        <!-- '"` --><!-- </textarea></xmp> --></option></form><form accept-charset="UTF-8" action="/alerta/alerta-contrib/delete/master/plugins/twilio/alerta_twilio_sms.py" class="inline-form" method="post"><div style="margin:0;padding:0;display:inline"><input name="utf8" type="hidden" value="&#x2713;" /><input name="authenticity_token" type="hidden" value="3qy00kgGfwwTPj4udwXP9jflZW0FNW1F2yo1y/EbERLqnUy3jaoVMrYYhJ82kzKyoVZIMtSZPqmke1gAbd2ZGg==" /></div>
           <button class="btn-octicon btn-octicon-danger tooltipped tooltipped-nw" type="submit"
             aria-label="Fork this project and delete the file" data-disable-with>
             <svg aria-hidden="true" class="octicon octicon-trashcan" height="16" version="1.1" viewBox="0 0 12 16" width="12"><path fill-rule="evenodd" d="M11 2H9c0-.55-.45-1-1-1H5c-.55 0-1 .45-1 1H2c-.55 0-1 .45-1 1v1c0 .55.45 1 1 1v9c0 .55.45 1 1 1h7c.55 0 1-.45 1-1V5c.55 0 1-.45 1-1V3c0-.55-.45-1-1-1zm-1 12H3V5h1v8h1V5h1v8h1V5h1v8h1V5h1v9zm1-10H2V3h9v1z"/></svg>
@@ -1279,46 +1302,220 @@
 </form>  </div>
 
   <div class="file-info">
-      53 lines (34 sloc)
+      43 lines (28 sloc)
       <span class="file-info-divider"></span>
-    1.25 KB
+    1.28 KB
   </div>
 </div>
 
     
-  <div id="readme" class="readme blob instapaper_body">
-    <article class="markdown-body entry-content" itemprop="text"><h1><a href="#twilio-sms-plugin" aria-hidden="true" class="anchor" id="user-content-twilio-sms-plugin"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Twilio SMS Plugin</h1>
-<p>Send SMS messages for new alerts using Twilio.</p>
-<p>For help, join <a href="https://gitter.im/alerta/chat"><img src="https://camo.githubusercontent.com/80fd041ad4dd80f78b89bc7af2efb9c0c8eec7c0/68747470733a2f2f6261646765732e6769747465722e696d2f616c657274612f636861742e706e67" alt="Gitter chat" data-canonical-src="https://badges.gitter.im/alerta/chat.png" style="max-width:100%;"></a></p>
-<h2><a href="#installation" aria-hidden="true" class="anchor" id="user-content-installation"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Installation</h2>
-<p>Clone the GitHub repo and run:</p>
-<pre><code>$ python setup.py install
-</code></pre>
-<p>Or, to install remotely from GitHub run:</p>
-<pre><code>$ pip install git+https://github.com/alerta/alerta-contrib.git#subdirectory=plugins/twilio
-</code></pre>
-<p>Note: If Alerta is installed in a python virtual environment then plugins
-need to be installed into the same environment for Alerta to dynamically
-discover them.</p>
-<h2><a href="#configuration" aria-hidden="true" class="anchor" id="user-content-configuration"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Configuration</h2>
-<p>Add <code>twilio_sms</code> to the list of enabled <code>PLUGINS</code> in <code>alertad.conf</code> server
-configuration file and set plugin-specific variables either in the
-server configuration file or as environment variables.</p>
-<div class="highlight highlight-source-python"><pre><span class="pl-c1">PLUGINS</span> <span class="pl-k">=</span> [<span class="pl-s"><span class="pl-pds">'</span>twilio_sms<span class="pl-pds">'</span></span>]
-<span class="pl-c1">TWILIO_ACCOUNT_SID</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span>ACxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx<span class="pl-pds">'</span></span>
-<span class="pl-c1">TWILIO_AUTH_TOKEN</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>
 
-<span class="pl-c1">TWILIO_TO_NUMBER</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span>
-<span class="pl-c1">TWILIO_FROM_NUMBER</span> <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">'</span><span class="pl-pds">'</span></span></pre></div>
-<h2><a href="#troubleshooting" aria-hidden="true" class="anchor" id="user-content-troubleshooting"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>Troubleshooting</h2>
-<p>Restart Alerta API and confirm that the plugin has been loaded and enabled.</p>
-<h2><a href="#references" aria-hidden="true" class="anchor" id="user-content-references"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>References</h2>
-<ul>
-<li>Twilio Sending Messages: <a href="https://www.twilio.com/docs/api/rest/sending-messages">https://www.twilio.com/docs/api/rest/sending-messages</a></li>
-</ul>
-<h2><a href="#license" aria-hidden="true" class="anchor" id="user-content-license"><svg aria-hidden="true" class="octicon octicon-link" height="16" version="1.1" viewBox="0 0 16 16" width="16"><path fill-rule="evenodd" d="M4 9h1v1H4c-1.5 0-3-1.69-3-3.5S2.55 3 4 3h4c1.45 0 3 1.69 3 3.5 0 1.41-.91 2.72-2 3.25V8.59c.58-.45 1-1.27 1-2.09C10 5.22 8.98 4 8 4H4c-.98 0-2 1.22-2 2.5S3 9 4 9zm9-3h-1v1h1c1 0 2 1.22 2 2.5S13.98 12 13 12H9c-.98 0-2-1.22-2-2.5 0-.83.42-1.64 1-2.09V6.25c-1.09.53-2 1.84-2 3.25C6 11.31 7.55 13 9 13h4c1.45 0 3-1.69 3-3.5S14.5 6 13 6z"></path></svg></a>License</h2>
-<p>Copyright (c) 2016 Nick Satterly. Available under the MIT License.</p>
-</article>
+  <div itemprop="text" class="blob-wrapper data type-python">
+      <table class="highlight tab-size js-file-line-container" data-tab-size="8">
+      <tr>
+        <td id="L1" class="blob-num js-line-number" data-line-number="1"></td>
+        <td id="LC1" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L2" class="blob-num js-line-number" data-line-number="2"></td>
+        <td id="LC2" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> logging</td>
+      </tr>
+      <tr>
+        <td id="L3" class="blob-num js-line-number" data-line-number="3"></td>
+        <td id="LC3" class="blob-code blob-code-inner js-file-line"><span class="pl-k">import</span> os</td>
+      </tr>
+      <tr>
+        <td id="L4" class="blob-num js-line-number" data-line-number="4"></td>
+        <td id="LC4" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> twilio.rest <span class="pl-k">import</span> TwilioRestClient</td>
+      </tr>
+      <tr>
+        <td id="L5" class="blob-num js-line-number" data-line-number="5"></td>
+        <td id="LC5" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L6" class="blob-num js-line-number" data-line-number="6"></td>
+        <td id="LC6" class="blob-code blob-code-inner js-file-line"><span class="pl-k">try</span>:</td>
+      </tr>
+      <tr>
+        <td id="L7" class="blob-num js-line-number" data-line-number="7"></td>
+        <td id="LC7" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">from</span> alerta.plugins <span class="pl-k">import</span> app  <span class="pl-c"><span class="pl-c">#</span> alerta &gt;= 5.0</span></td>
+      </tr>
+      <tr>
+        <td id="L8" class="blob-num js-line-number" data-line-number="8"></td>
+        <td id="LC8" class="blob-code blob-code-inner js-file-line"><span class="pl-k">except</span> <span class="pl-c1">ImportError</span>:</td>
+      </tr>
+      <tr>
+        <td id="L9" class="blob-num js-line-number" data-line-number="9"></td>
+        <td id="LC9" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">from</span> alerta.app <span class="pl-k">import</span> app  <span class="pl-c"><span class="pl-c">#</span> alerta &lt; 5.0</span></td>
+      </tr>
+      <tr>
+        <td id="L10" class="blob-num js-line-number" data-line-number="10"></td>
+        <td id="LC10" class="blob-code blob-code-inner js-file-line"><span class="pl-k">from</span> alerta.plugins <span class="pl-k">import</span> PluginBase</td>
+      </tr>
+      <tr>
+        <td id="L11" class="blob-num js-line-number" data-line-number="11"></td>
+        <td id="LC11" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L12" class="blob-num js-line-number" data-line-number="12"></td>
+        <td id="LC12" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">LOG</span> <span class="pl-k">=</span> logging.getLogger(<span class="pl-s"><span class="pl-pds">&#39;</span>alerta.plugins.twilio<span class="pl-pds">&#39;</span></span>)</td>
+      </tr>
+      <tr>
+        <td id="L13" class="blob-num js-line-number" data-line-number="13"></td>
+        <td id="LC13" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L14" class="blob-num js-line-number" data-line-number="14"></td>
+        <td id="LC14" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">TWILIO_ACCOUNT_SID</span> <span class="pl-k">=</span> os.environ.get(<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_ACCOUNT_SID<span class="pl-pds">&#39;</span></span>) <span class="pl-k">or</span> app.config[<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_ACCOUNT_SID<span class="pl-pds">&#39;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="L15" class="blob-num js-line-number" data-line-number="15"></td>
+        <td id="LC15" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">TWILIO_AUTH_TOKEN</span> <span class="pl-k">=</span> os.environ.get(<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_AUTH_TOKEN<span class="pl-pds">&#39;</span></span>) <span class="pl-k">or</span> app.config[<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_AUTH_TOKEN<span class="pl-pds">&#39;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="L16" class="blob-num js-line-number" data-line-number="16"></td>
+        <td id="LC16" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L17" class="blob-num js-line-number" data-line-number="17"></td>
+        <td id="LC17" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">TWILIO_TO_NUMBER</span> <span class="pl-k">=</span> os.environ.get(<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_TO_NUMBER<span class="pl-pds">&#39;</span></span>) <span class="pl-k">or</span> app.config[<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_TO_NUMBER<span class="pl-pds">&#39;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="L18" class="blob-num js-line-number" data-line-number="18"></td>
+        <td id="LC18" class="blob-code blob-code-inner js-file-line"><span class="pl-c1">TWILIO_FROM_NUMBER</span> <span class="pl-k">=</span> os.environ.get(<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_FROM_NUMBER<span class="pl-pds">&#39;</span></span>) <span class="pl-k">or</span> app.config[<span class="pl-s"><span class="pl-pds">&#39;</span>TWILIO_FROM_NUMBER<span class="pl-pds">&#39;</span></span>]</td>
+      </tr>
+      <tr>
+        <td id="L19" class="blob-num js-line-number" data-line-number="19"></td>
+        <td id="LC19" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L20" class="blob-num js-line-number" data-line-number="20"></td>
+        <td id="LC20" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L21" class="blob-num js-line-number" data-line-number="21"></td>
+        <td id="LC21" class="blob-code blob-code-inner js-file-line"><span class="pl-k">class</span> <span class="pl-en">SendSMSMessage</span>(<span class="pl-e">PluginBase</span>):</td>
+      </tr>
+      <tr>
+        <td id="L22" class="blob-num js-line-number" data-line-number="22"></td>
+        <td id="LC22" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L23" class="blob-num js-line-number" data-line-number="23"></td>
+        <td id="LC23" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">pre_receive</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">alert</span>):</td>
+      </tr>
+      <tr>
+        <td id="L24" class="blob-num js-line-number" data-line-number="24"></td>
+        <td id="LC24" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span> alert</td>
+      </tr>
+      <tr>
+        <td id="L25" class="blob-num js-line-number" data-line-number="25"></td>
+        <td id="LC25" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L26" class="blob-num js-line-number" data-line-number="26"></td>
+        <td id="LC26" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">post_receive</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">alert</span>):</td>
+      </tr>
+      <tr>
+        <td id="L27" class="blob-num js-line-number" data-line-number="27"></td>
+        <td id="LC27" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L28" class="blob-num js-line-number" data-line-number="28"></td>
+        <td id="LC28" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">if</span> alert.repeat:</td>
+      </tr>
+      <tr>
+        <td id="L29" class="blob-num js-line-number" data-line-number="29"></td>
+        <td id="LC29" class="blob-code blob-code-inner js-file-line">            <span class="pl-k">return</span></td>
+      </tr>
+      <tr>
+        <td id="L30" class="blob-num js-line-number" data-line-number="30"></td>
+        <td id="LC30" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L31" class="blob-num js-line-number" data-line-number="31"></td>
+        <td id="LC31" class="blob-code blob-code-inner js-file-line">        message <span class="pl-k">=</span> <span class="pl-s"><span class="pl-pds">&quot;</span><span class="pl-c1">%s</span>: <span class="pl-c1">%s</span> alert for <span class="pl-c1">%s</span> - <span class="pl-c1">%s</span> is <span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span> <span class="pl-k">%</span> (</td>
+      </tr>
+      <tr>
+        <td id="L32" class="blob-num js-line-number" data-line-number="32"></td>
+        <td id="LC32" class="blob-code blob-code-inner js-file-line">            alert.environment, alert.severity.capitalize(),</td>
+      </tr>
+      <tr>
+        <td id="L33" class="blob-num js-line-number" data-line-number="33"></td>
+        <td id="LC33" class="blob-code blob-code-inner js-file-line">            <span class="pl-s"><span class="pl-pds">&#39;</span>,<span class="pl-pds">&#39;</span></span>.join(alert.service), alert.resource, alert.event</td>
+      </tr>
+      <tr>
+        <td id="L34" class="blob-num js-line-number" data-line-number="34"></td>
+        <td id="LC34" class="blob-code blob-code-inner js-file-line">        )</td>
+      </tr>
+      <tr>
+        <td id="L35" class="blob-num js-line-number" data-line-number="35"></td>
+        <td id="LC35" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L36" class="blob-num js-line-number" data-line-number="36"></td>
+        <td id="LC36" class="blob-code blob-code-inner js-file-line">        client <span class="pl-k">=</span> TwilioRestClient(<span class="pl-c1">TWILIO_ACCOUNT_SID</span>, <span class="pl-c1">TWILIO_AUTH_TOKEN</span>)</td>
+      </tr>
+      <tr>
+        <td id="L37" class="blob-num js-line-number" data-line-number="37"></td>
+        <td id="LC37" class="blob-code blob-code-inner js-file-line">        message <span class="pl-k">=</span> client.messages.create(<span class="pl-v">body</span><span class="pl-k">=</span>message, <span class="pl-v">to</span><span class="pl-k">=</span><span class="pl-c1">TWILIO_TO_NUMBER</span>, <span class="pl-v">from_</span><span class="pl-k">=</span><span class="pl-c1">TWILIO_FROM_NUMBER</span>)</td>
+      </tr>
+      <tr>
+        <td id="L38" class="blob-num js-line-number" data-line-number="38"></td>
+        <td id="LC38" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L39" class="blob-num js-line-number" data-line-number="39"></td>
+        <td id="LC39" class="blob-code blob-code-inner js-file-line">        <span class="pl-c1">LOG</span>.info(<span class="pl-s"><span class="pl-pds">&quot;</span>Twilio SMS Message ID: <span class="pl-c1">%s</span><span class="pl-pds">&quot;</span></span>, message.sid)</td>
+      </tr>
+      <tr>
+        <td id="L40" class="blob-num js-line-number" data-line-number="40"></td>
+        <td id="LC40" class="blob-code blob-code-inner js-file-line">
+</td>
+      </tr>
+      <tr>
+        <td id="L41" class="blob-num js-line-number" data-line-number="41"></td>
+        <td id="LC41" class="blob-code blob-code-inner js-file-line">    <span class="pl-k">def</span> <span class="pl-en">status_change</span>(<span class="pl-smi"><span class="pl-smi">self</span></span>, <span class="pl-smi">alert</span>, <span class="pl-smi">status</span>):</td>
+      </tr>
+      <tr>
+        <td id="L42" class="blob-num js-line-number" data-line-number="42"></td>
+        <td id="LC42" class="blob-code blob-code-inner js-file-line">        <span class="pl-k">return</span></td>
+      </tr>
+</table>
+
+  <div class="BlobToolbar position-absolute js-file-line-actions dropdown js-menu-container js-select-menu d-none" aria-hidden="true">
+    <button class="btn-octicon ml-0 px-2 p-0 bg-white border border-gray-dark rounded-1 dropdown-toggle js-menu-target" id="js-file-line-action-button" type="button" aria-expanded="false" aria-haspopup="true" aria-label="Inline file action toolbar" aria-controls="inline-file-actions">
+      <svg aria-hidden="true" class="octicon" height="16" version="1.1" viewBox="0 0 13 4" width="14">
+        <g stroke="none" stroke-width="1" fill-rule="evenodd">
+            <g transform="translate(-1.000000, -6.000000)">
+                <path d="M2.5,9.5 C1.67157288,9.5 1,8.82842712 1,8 C1,7.17157288 1.67157288,6.5 2.5,6.5 C3.32842712,6.5 4,7.17157288 4,8 C4,8.82842712 3.32842712,9.5 2.5,9.5 Z M7.5,9.5 C6.67157288,9.5 6,8.82842712 6,8 C6,7.17157288 6.67157288,6.5 7.5,6.5 C8.32842712,6.5 9,7.17157288 9,8 C9,8.82842712 8.32842712,9.5 7.5,9.5 Z M12.5,9.5 C11.6715729,9.5 11,8.82842712 11,8 C11,7.17157288 11.6715729,6.5 12.5,6.5 C13.3284271,6.5 14,7.17157288 14,8 C14,8.82842712 13.3284271,9.5 12.5,9.5 Z"></path>
+            </g>
+        </g>
+      </svg>
+    </button>
+    <div class="dropdown-menu-content js-menu-content" id="inline-file-actions">
+      <ul class="BlobToolbar-dropdown dropdown-menu dropdown-menu-se mt-2">
+        <li><a class="js-zeroclipboard dropdown-item" style="cursor:pointer;" id="js-copy-lines" data-original-text="Copy lines">Copy lines</a></li>
+        <li><a class="js-zeroclipboard dropdown-item" id= "js-copy-permalink" style="cursor:pointer;" data-original-text="Copy permalink">Copy permalink</a></li>
+        <li><a href="/alerta/alerta-contrib/blame/d49da64da862c3cf91f92eec4a9c9523f828ac79/plugins/twilio/alerta_twilio_sms.py" class="dropdown-item js-update-url-with-hash" id="js-view-git-blame">View git blame</a></li>
+          <li><a href="/alerta/alerta-contrib/issues/new" class="dropdown-item" id="js-new-issue">Open new issue</a></li>
+      </ul>
+    </div>
+  </div>
+
   </div>
 
   </div>
@@ -1343,7 +1540,7 @@ server configuration file or as environment variables.</p>
 <div class="footer container-lg px-3" role="contentinfo">
   <div class="position-relative d-flex flex-justify-between py-6 mt-6 f6 text-gray border-top border-gray-light ">
     <ul class="list-style-none d-flex flex-wrap ">
-      <li class="mr-3">&copy; 2017 <span title="0.23171s from unicorn-1285370167-v74tn">GitHub</span>, Inc.</li>
+      <li class="mr-3">&copy; 2017 <span title="0.24497s from unicorn-4092670263-gm224">GitHub</span>, Inc.</li>
         <li class="mr-3"><a href="https://github.com/site/terms" data-ga-click="Footer, go to terms, text:terms">Terms</a></li>
         <li class="mr-3"><a href="https://github.com/site/privacy" data-ga-click="Footer, go to privacy, text:privacy">Privacy</a></li>
         <li class="mr-3"><a href="https://github.com/security" data-ga-click="Footer, go to security, text:security">Security</a></li>
